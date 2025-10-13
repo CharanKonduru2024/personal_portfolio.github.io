@@ -43,21 +43,25 @@
   
             <div class="col-lg-12 portfolio-info">
               <br>
-              <h2 style="color:#FFD700">Job Search Platform</h2>
+              <h2 style="color:#FFD700">Real-Time Stock Market Data Pipeline<</h2>
               <ul>
-                <li><strong>Tech Stack</strong>: MySQL, Node.js, React.js, Redux, Docker</li>
+                <li><strong>Tech Stack</strong>: Kafka, Airflow, PySpark, MinIO (S3), Snowflake, Docker, SQL</li>
                 <!-- <li><strong>Website URL</strong>: <a href="https://galvanic-music.herokuapp.com/" target="_blank">Link</a></li> -->
-                <li><strong>Github URL</strong>: <a href="https://github.com/VSMourya/Job_Search_Platform" target="_blank">Project Link</a></li>
+                <li><strong>Github URL</strong>: <a href="https://github.com/CharanKonduru2024/stockmarketdatapipeline" target="_blank">Project Link</a></li>
               </ul>
   
               <p>
-                Reactjs based Job Search Platform.             
+                A real-time stock market data pipeline designed to process both historical and live data efficiently.
+It uses Kafka for streaming ingestion, PySpark for transformations, MinIO (S3) as a data lake, and Snowflake as the analytics warehouse.           
               </p>
               <p>
-                Candidates can register/login to the web app, create his/her portfolio, apply for jobs, view detailed information of jobs and recruiters/employers, search for jobs based on filters such as Job-location and Salary constraints, Company.
+                Airflow orchestrates end-to-end workflows including data extraction, transformation, and loading into Snowflake.
               </p>
               <p>
-                Recruiters/Employers can create his/her porfolio, post jobs, skills required for job, change job status of a candidate.
+                The pipeline supports 1-minute micro-batches, ensures fault-tolerant message delivery, and provides sub-3-minute latency for aggregated metrics.
+              </p>
+              <p>
+                Deployed via Docker Compose, the system runs multiple integrated services for seamless automation and scalability.
               </p>
             </div>
   
